@@ -1,11 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Boite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Boite - Spectacles</title>
+  <link rel="stylesheet" href="telephone.css">
+  <link rel="stylesheet" href="pc.css">
 </head>
 <body>
-    
+<header>
+  <a class="logo" href="index.html">LA B<span>□</span>ITE</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="spectacles.html">Spectacles</a>
+    <a href="index.html#histoire">Artistes</a>
+    <a href="spectacles.html#agenda">Billetterie</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="#compte">Compte</a>
+  </nav>
+  <div class="compte">
+    <a class="connexion" href="#connexion">Connexion</a>
+    <a class="bouton" href="#inscription">Inscription</a>
+  </div>
+</header>
+<main>
+  <section class="intro"><p class="accent">VOS PROCHAINS RENDEZ-VOUS</p><h1>Spectacles</h1><p>Musique, théâtre, danse, chant : c'est dans La Boite !</p></section>
+  <section class="contenu" id="agenda">
+    <h2>Agenda</h2><p class="secondaire">Octobre – Novembre 2026</p>
+    <div class="agenda">
+      <a href="#concert"><strong>16 <small>OCT.</small></strong><span>MUSIQUE</span><b>Les nuits électriques</b><small>Vendredi · 20h30</small></a>
+      <a href="#theatre"><strong>23 <small>OCT.</small></strong><span>THÉÂTRE</span><b>À voix ouvertes</b><small>Vendredi · 20h00</small></a>
+      <a href="#danse"><strong>07 <small>NOV.</small></strong><span>DANSE</span><b>Corps en lumière</b><small>Samedi · 19h30</small></a>
+      <a href="#musical"><strong>14 <small>NOV.</small></strong><span>THÉÂTRE MUSICAL</span><b>Les échos du silence</b><small>Samedi · 20h00</small></a>
+    </div>
+  </section>
+  <section class="contenu">
+    <div class="titre"><p class="accent">LA SCÈNE. L'ÉMOTION. VOUS.</p><h2>Fiches spectacles</h2></div>
+    <article class="fiche" id="concert">
+      <!-- IMAGE À AJOUTER : images/concert.jpg -->
+      <img src="images/concert.jpg" alt="Les nuits électriques">
+      <div><p class="rose">MUSIQUE</p><h3>Les nuits électriques</h3><p>Des voix brutes, des pulsations électroniques et une énergie débordante pour une soirée à vivre ensemble.</p><p class="secondaire">Collectif Minuit · 1h30 · Tout public</p><div class="bas-fiche"><strong>À partir de 22 €</strong><a class="bouton" href="mailto:contact@exemple.fr?subject=Reservation%20concert">Réserver ↗</a></div></div>
+    </article>
+    <article class="fiche" id="theatre">
+      <!-- IMAGE À AJOUTER : images/theatre.jpg -->
+      <img src="images/theatre.jpg" alt="À voix ouvertes">
+      <div><p class="rose">THÉÂTRE</p><h3>À voix ouvertes</h3><p>Quatre personnages se retrouvent le temps d'une nuit. Une pièce sensible et contemporaine.</p><p class="secondaire">Compagnie Les Échos · 1h15 · Dès 12 ans</p><div class="bas-fiche"><strong>À partir de 18 €</strong><a class="bouton" href="mailto:contact@exemple.fr?subject=Reservation%20theatre">Réserver ↗</a></div></div>
+    </article>
+    <article class="fiche" id="danse">
+      <!-- IMAGE À AJOUTER : images/danse.jpg -->
+      <img src="images/danse.jpg" alt="Corps en lumière">
+      <div><p class="rose">DANSE</p><h3>Corps en lumière</h3><p>Une pièce chorégraphique vibrante où chaque geste raconte une nouvelle façon d'être ensemble.</p><p class="secondaire">Atelier Mouvement · 55 min · Dès 8 ans</p><div class="bas-fiche"><strong>À partir de 16 €</strong><a class="bouton" href="mailto:contact@exemple.fr?subject=Reservation%20danse">Réserver ↗</a></div></div>
+    </article>
+    <article class="fiche" id="musical">
+      <!-- IMAGE À AJOUTER : images/musical.jpg -->
+      <img src="images/musical.jpg" alt="Les échos du silence">
+      <div><p class="rose">THÉÂTRE MUSICAL</p><h3>Les échos du silence</h3><p>Deux artistes mêlent théâtre et musique dans un spectacle intime et lumineux.</p><p class="secondaire">Compagnie L'Intervalle · 1h10 · Dès 10 ans</p><div class="bas-fiche"><strong>À partir de 20 €</strong><a class="bouton" href="mailto:contact@exemple.fr?subject=Reservation%20musical">Réserver ↗</a></div></div>
+    </article>
+    <p class="secondaire">Spectacles, dates et tarifs fictifs pour la maquette.</p>
+  </section>
+</main>
+<footer><strong>LA BOITE</strong><p>Fouras · Salle de spectacle et culture</p><a href="index.html#contact">Contact</a></footer>
 </body>
 </html>

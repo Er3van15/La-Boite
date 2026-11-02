@@ -1,0 +1,44 @@
+/* Adaptation tablette et ordinateur. Charger après telephone.css. */
+/* TABLETTE : à partir de 650 pixels */
+@media (min-width:650px) {
+ header { flex-direction:row; justify-content:space-between; padding:15px 5%; }
+ .cartes,.partenaires { grid-template-columns:repeat(2,1fr); }
+ .histoire { display:grid; grid-template-columns:1fr 1fr; }
+ .histoire img { height:100%; }
+ .agenda { grid-template-columns:repeat(4,minmax(0,1fr)); }
+ .fiche { display:grid; grid-template-columns:32% 1fr; }
+ .fiche>img { height:100%; min-height:280px; }
+}
+/* ORDINATEUR : à partir de 1000 pixels */
+@media (min-width:1000px) {
+ .contenu { padding:55px 0; }
+ .banniere { min-height:550px; }
+ .banniere h1 { font-size:60px; }
+ .cartes { grid-template-columns:repeat(3,1fr); }
+ .grande-image { min-height:370px; }
+ .intro h1 { font-size:55px; }
+ .fiche>div { padding:30px; }
+}
+
+/* Menu centré et boutons à droite sur ordinateur */
+@media (min-width:1000px) {
+ header { display:grid; grid-template-columns:1fr auto 1fr; align-items:center; gap:18px; }
+ header .logo { justify-self:start; }
+ header nav { justify-self:center; flex-wrap:nowrap; white-space:nowrap; }
+ header .compte { justify-self:end; white-space:nowrap; }
+}
+
+/* Barre identique à la maquette : logo à gauche, liens au centre, compte à droite */
+@media (min-width:1100px) {
+ header { display:grid; grid-template-columns:minmax(190px,1fr) auto minmax(190px,1fr); align-items:center; padding:12px 3%; gap:20px; min-height:86px; }
+ header .logo { justify-self:start; font-size:35px; }
+ header .logo span { font-size:35px; }
+ header nav { justify-self:center; display:flex; flex-wrap:nowrap; gap:34px; font-size:16px; color:#b5b0c0; }
+ header nav a:first-child { color:#fff; }
+ header .compte { justify-self:end; gap:12px; }
+ header .compte a { padding:16px 20px; font-size:15px; }
+}
+@media (min-width:650px) and (max-width:1099px) {
+ header { flex-wrap:wrap; justify-content:center; }
+ header nav { order:3; width:100%; justify-content:center; }
+}

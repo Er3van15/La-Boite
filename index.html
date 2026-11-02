@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Boite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Boite - Accueil</title>
+  <link rel="stylesheet" href="telephone.css">
+  <link rel="stylesheet" href="pc.css">
 </head>
 <body>
-    
+<header>
+  <a class="logo" href="index.html">LA B<span>□</span>ITE</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="spectacles.html">Spectacles</a>
+    <a href="index.html#histoire">Artistes</a>
+    <a href="spectacles.html#agenda">Billetterie</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="#compte">Compte</a>
+  </nav>
+  <div class="compte">
+    <a class="connexion" href="#connexion">Connexion</a>
+    <a class="bouton" href="#inscription">Inscription</a>
+  </div>
+</header>
+<main>
+  <section class="banniere">
+    <img src="/image/accueil.jpg" alt="Salle de spectacle La Boite">
+    <div class="banniere-texte">
+      <p class="accent">LA SCÈNE. L'ÉMOTION. VOUS.</p>
+      <h1>Le spectacle se vit.</h1>
+      <p>Musique, théâtre, danse, chant : c'est dans La Boite !</p>
+      <a class="bouton" href="spectacles.html">Découvrir les spectacles ↗</a>
+    </div>
+  </section>
+  <section class="contenu">
+    <div class="titre"><p class="accent">VOS PROCHAINS RENDEZ-VOUS</p><h2>Spectacles</h2></div>
+    <div class="cartes">
+      <article class="carte">
+        <img src="/image/concert.png" alt="Concert Les nuits électriques">
+        <div class="carte-texte"><p class="rose">MUSIQUE · 16 OCT.</p><h3>Les nuits électriques</h3><p>Collectif Minuit · Concert live</p><a href="spectacles.html#concert">Découvrir et réserver ↗</a></div>
+      </article>
+      <article class="carte">
+        <!-- IMAGE À AJOUTER : images/theatre.jpg (photo du théâtre) -->
+        <img src="/image/theatre.png" alt="Spectacle À voix ouvertes">
+        <div class="carte-texte"><p class="rose">THÉÂTRE · 23 OCT.</p><h3>À voix ouvertes</h3><p>Compagnie Les Échos · Théâtre</p><a href="spectacles.html#theatre">Découvrir et réserver ↗</a></div>
+      </article>
+      <article class="carte">
+        <!-- IMAGE À AJOUTER : images/danse.jpg (photo de danse) -->
+        <img src="/image/danse.png" alt="Spectacle Corps en lumière">
+        <div class="carte-texte"><p class="rose">DANSE · 07 NOV.</p><h3>Corps en lumière</h3><p>Atelier Mouvement · Danse</p><a href="spectacles.html#danse">Découvrir et réserver ↗</a></div>
+      </article>
+    </div>
+    <p class="centrer"><a href="spectacles.html">Voir tous les spectacles →</a></p>
+  </section>
+  <section class="grande-image">
+    <!-- IMAGE À AJOUTER : images/salle.jpg (plateau au même niveau que les spectateurs) -->
+    <img src="images/salle.jpg" alt="Plateau de la salle La Boite">
+    <div><p class="rose">À L'INTÉRIEUR DE LA BOITE</p><h2>Tout près de la scène.<br>Au plus près des artistes.</h2></div>
+  </section>
+  <section class="contenu" id="histoire">
+    <div class="titre"><h2>Notre histoire</h2></div>
+    <div class="histoire">
+      <!-- IMAGE À AJOUTER : images/artistes.jpg (artistes en répétition) -->
+      <img src="images/artistes.jpg" alt="Artistes en répétition">
+      <div><h3>Une scène au même niveau que le public.</h3><p>La Boite rapproche les artistes et les spectateurs. Son plateau est au même niveau que le public, pour favoriser les rencontres et les échanges.</p><p>La salle accueille musique, théâtre, danse et cirque.</p></div>
+    </div>
+  </section>
+  <section class="contenu">
+    <div class="titre"><h2>Nos partenaires</h2></div>
+    <div class="partenaires">
+      <!-- IMAGE À AJOUTER : images/fouras.png (logo de Fouras) -->
+      <div><img src="images/fouras.png" alt="Fouras-les-Bains"></div>
+      <!-- IMAGE À AJOUTER : images/partenaire.png (deuxième logo) -->
+      <div><img src="images/partenaire.png" alt="Partenaire culturel"></div>
+    </div>
+  </section>
+</main>
+<footer id="contact"><strong>LA BOITE</strong><p>Fouras · Salle de spectacle et culture</p><a href="mailto:contact@exemple.fr">Contact (adresse à remplacer)</a></footer>
 </body>
 </html>
